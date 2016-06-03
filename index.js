@@ -5,6 +5,8 @@ app.use(require('morgan')('dev'));
 app.use(require('cookie-parser')());
 app.use(require('body-parser').urlencoded({ extended: true }));
 
+require('./models')
+
 app.get('/', (req, res) => res.send('Hello!'));
 
 app.listen(3000);
