@@ -5,6 +5,7 @@ app.use(require('morgan')('dev'));
 app.use(require('cookie-parser')());
 app.use(require('body-parser').urlencoded({ extended: true }));
 app.use('/auth', require('./auth'))
+app.use('/question', require('./question'))
 
 require('./models')
 var middleware = require('./middleware')
