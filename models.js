@@ -20,6 +20,11 @@ var User = sequelize.define('user', {
   name: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+  lastQuestionAllowed: {
+    type: Sequelize.INTEGER,
+    allowNull: false,
+    defaultValue: 1
   }
 });
 
