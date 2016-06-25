@@ -34,3 +34,6 @@ node_modules
 
 # SQLite Database
 db.sqlite
+
+# public folder generated from frontend repo
+public

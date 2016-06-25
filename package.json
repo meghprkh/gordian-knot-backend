@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "NODE_ENV=DEV nodemon index.js",
+    "prod": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Megh Parikh <meghprkh@gmail.com> (http://meghprkh.github.io)",
@@ -13,6 +14,7 @@
     "body-parser": "^1.15.1",
     "cookie-parser": "^1.4.3",
     "express": "^4.13.4",
+    "express-history-api-fallback": "^2.0.0",
     "jsonwebtoken": "^7.0.0",
     "morgan": "^1.7.0",
     "sequelize": "^3.23.3",
